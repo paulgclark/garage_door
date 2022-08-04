@@ -35,8 +35,12 @@ blocks:
 - name: center_freq
   id: variable
   parameters:
-    comment: ''
-    value: 390e6
+    comment: 'You will need to change this number
+
+      to match the frequency at which
+
+      you found the signal.'
+    value: 100e6
   states:
     bus_sink: false
     bus_source: false
@@ -62,8 +66,12 @@ blocks:
     affinity: ''
     alias: ''
     append: 'False'
-    comment: ''
-    file: ./remote_00_c390M_s4M.iq
+    comment: 'It''s also good practice to change
+
+      the file name to include the
+
+      center frequency you selected.'
+    file: ./remote_01_cxxxM_s4M.iq
     type: complex
     unbuffered: 'False'
     vlen: '1'

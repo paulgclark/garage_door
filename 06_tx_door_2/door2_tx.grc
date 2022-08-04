@@ -35,25 +35,33 @@ blocks:
 - name: bits_0_5
   id: variable
   parameters:
-    comment: ''
+    comment: 'Modify these bits
+
+      to control the
+
+      second door'
     value: seq_one + seq_zero + seq_one + seq_zero + seq_one + seq_one
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [851, 5]
+    coordinate: [1041, 3]
     rotation: 0
     state: enabled
 - name: bits_7_8
   id: variable
   parameters:
-    comment: ''
+    comment: 'Modify these bits
+
+      to control the
+
+      second door'
     value: seq_one + seq_zero
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [859, 73]
+    coordinate: [1212, 5]
     rotation: 0
     state: enabled
 - name: center_freq

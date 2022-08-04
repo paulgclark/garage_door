@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
 import my_zmq_utils as zmu
+import top_block 
 import itertools
 import time
-import top_block
 
 tcp_str = "tcp://127.0.0.1:5555"
 

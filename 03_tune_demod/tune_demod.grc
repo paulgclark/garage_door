@@ -47,7 +47,9 @@ blocks:
 - name: chan_width
   id: variable_qtgui_range
   parameters:
-    comment: ''
+    comment: "This must be set to the\na value that is **larger**\nthan the observed\
+      \ width \nof the signal peak in the\nfrequency plot. Too small\nand the signal\
+      \ will be \ndistorted. Too large and\nthe noise level will\nbe higher."
     gui_hint: ''
     label: ''
     min_len: '200'
@@ -68,7 +70,8 @@ blocks:
 - name: freq
   id: variable_qtgui_range
   parameters:
-    comment: ''
+    comment: "You'll need to \nmodify this to\nmatch the observed\nfrequency from\n\
+      step 1"
     gui_hint: ''
     label: ''
     min_len: '200'
@@ -101,7 +104,8 @@ blocks:
 - name: threshold
   id: variable_qtgui_range
   parameters:
-    comment: ''
+    comment: "This must be set to\na midpoint between \nthe high (logic 1) and \n\
+      low (logic 0) levels of \nthe raw demodulated \nwaveform."
     gui_hint: ''
     label: ''
     min_len: '200'
@@ -109,14 +113,14 @@ blocks:
     rangeType: float
     start: '0'
     step: '0.005'
-    stop: '0.2'
+    stop: '0.5'
     value: '0'
     widget: counter_slider
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [748, 10]
+    coordinate: [773, 14]
     rotation: 0
     state: enabled
 - name: working_samp_rate
@@ -471,7 +475,7 @@ blocks:
     marker9: '-1'
     name: '""'
     nconnections: '2'
-    size: 1024*2
+    size: 1024*16
     srate: working_samp_rate
     stemplot: 'False'
     style1: '1'

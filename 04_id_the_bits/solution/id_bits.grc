@@ -89,7 +89,8 @@ blocks:
 - name: preamble_str
   id: variable
   parameters:
-    comment: ''
+    comment: "Set this to a string of\n0s and 1s that uniquely\ndenote the start of\
+      \ a \ntransmission"
     value: '"000000001"'
   states:
     bus_sink: false
@@ -125,13 +126,14 @@ blocks:
 - name: symbol_len
   id: variable
   parameters:
-    comment: ''
-    value: 0.5e-3*0+1e-3
+    comment: "Set this to the length\nof the minimum time\nobserved in the\ndemodulated\
+      \ \nwaveform"
+    value: 1e-3
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1341, 117]
+    coordinate: [1339, 16]
     rotation: 0
     state: enabled
 - name: symbol_rate

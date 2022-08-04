@@ -1,15 +1,15 @@
 #!/usr/bin/python3
 
-import my_zmq_utils as zmu
+#import my_zmq_utils as zmu
 import itertools
 import time
-import top_block
+#import top_block
 
 tcp_str = "tcp://127.0.0.1:5555"
 
 # some systems require a max or min value for this:
-DEAD_AIR = 40 * [0, ]
-REPEAT_NUM = 20
+DEAD_AIR = 20 * [0, ]
+REPEAT_NUM = 10
 
 # define one and zero and third-state sequences
 ZERO = [0, 1, 1, 1]
@@ -72,22 +72,22 @@ def build_dip_list(int_val):
 
 
 # init tx payload socket
-tx_socket = zmu.ZmqPushMsgSocket(tcp_str=tcp_str)
+#tx_socket = zmu.ZmqPushMsgSocket(tcp_str=tcp_str)
 
 # setup and run flowgraph
-fg = top_block.top_block()
-fg.start()
+#fg = top_block.top_block()
+#fg.start()
 
-ctl_sel = input("Press Enter to begin fuzzing: ")
+#ctl_sel = input("Press Enter to begin fuzzing: ")
 
 # for each possible config of DIP switches
-#for dip_int in range(0x100):
-for dip_int in [0x36, 0xAE, 0xD9]:
+for dip_int in range(0x100):
     print("DIP = {:02x}".format(dip_int))
     payload_bits = build_payload(dip_int=dip_int)
+    time.sleep(0.1)
 
-    tx_socket.send_raw_bytes(byte_list=payload_bits)
-    time.sleep(2)
+    #tx_socket.send_raw_bytes(byte_list=payload_bits)
+    time.sleep(0.1)
 
-fg.stop()
+#fg.stop()
 

@@ -35,7 +35,15 @@ blocks:
 - name: center_freq
   id: variable_qtgui_range
   parameters:
-    comment: ''
+    comment: 'After running the flowgraph,
+
+      you''ll move the slider until
+
+      you find the signal present
+
+      in the scanner when the
+
+      button is pressed.'
     gui_hint: ''
     label: ''
     min_len: '200'
