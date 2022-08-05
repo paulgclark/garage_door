@@ -34,7 +34,7 @@ class top_block(gr.top_block):
         self.unit_rate = unit_rate = 1/unit_timing
         self.tcp_tx = tcp_tx = "tcp://127.0.0.1:5555"
         self.samp_rate = samp_rate = 2e6
-        self.rf_gain = rf_gain = 50
+        self.rf_gain = rf_gain = 55
         self.freq = freq = 390e6
         self.center_freq = center_freq = 390.5e6
 

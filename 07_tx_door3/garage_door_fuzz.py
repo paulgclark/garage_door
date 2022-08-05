@@ -3,7 +3,7 @@
 import solution.my_zmq_utils as zmu
 import itertools
 import time
-import solution.top_block
+import solution.top_block as top_block
 
 tcp_str = "tcp://127.0.0.1:5555"
 

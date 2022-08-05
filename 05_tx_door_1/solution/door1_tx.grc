@@ -118,8 +118,8 @@ blocks:
     rangeType: float
     start: '0'
     step: '5'
-    stop: '50'
-    value: '50'
+    stop: '55'
+    value: '55'
     widget: counter_slider
   states:
     bus_sink: false

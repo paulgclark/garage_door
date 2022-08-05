@@ -60,12 +60,12 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: '50'
+    value: '55'
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1268, 417]
+    coordinate: [1268, 418]
     rotation: 0
     state: enabled
 - name: samp_rate
