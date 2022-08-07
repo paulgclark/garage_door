@@ -74,9 +74,9 @@ blocks:
     min_len: '200'
     orient: Qt.Horizontal
     rangeType: float
-    start: 388e6
+    start: 389.5e6
     step: 50e3
-    stop: 392e6
+    stop: 390.5e6
     value: 390e6
     widget: counter_slider
   states:
@@ -172,7 +172,7 @@ blocks:
     alias: ''
     begin_tag: pmt.PMT_NIL
     comment: ''
-    file: /home/paul/garage_door/remote_00_c390M_s1M.iq
+    file: ./remote_00_c390M_s1M.iq
     length: '0'
     maxoutbuf: '0'
     minoutbuf: '0'

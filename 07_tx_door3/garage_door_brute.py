@@ -78,7 +78,7 @@ tx_socket = zmu.ZmqPushMsgSocket(tcp_str=tcp_str)
 fg = top_block.top_block()
 fg.start()
 
-ctl_sel = input("Press Enter to begin fuzzing: ")
+ctl_sel = input("Press Enter to begin iterative attack: ")
 
 # *********************************************************
 # Enter your code here, using the following functions:

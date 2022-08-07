@@ -60,7 +60,7 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: '55'
+    value: '70'
   states:
     bus_sink: false
     bus_source: false
