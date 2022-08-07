@@ -110,7 +110,7 @@ blocks:
     start: '0'
     step: '0.005'
     stop: '0.5'
-    value: '0.1'
+    value: '0.025'
     widget: counter_slider
   states:
     bus_sink: false
@@ -172,7 +172,7 @@ blocks:
     alias: ''
     begin_tag: pmt.PMT_NIL
     comment: ''
-    file: /home/paul/code/garage_door/remote_00_c390M_s4M.iq
+    file: /home/paul/garage_door/remote_00_c390M_s1M.iq
     length: '0'
     maxoutbuf: '0'
     minoutbuf: '0'

@@ -43,7 +43,7 @@ blocks:
     bus_structure: null
     coordinate: [851, 5]
     rotation: 0
-    state: enabled
+    state: disabled
 - name: bits_7_8
   id: variable
   parameters:
@@ -55,7 +55,7 @@ blocks:
     bus_structure: null
     coordinate: [859, 73]
     rotation: 0
-    state: enabled
+    state: disabled
 - name: center_freq
   id: variable
   parameters:
@@ -99,7 +99,8 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: 'seq_x + bits_0_5 + seq_x + bits_7_8 + seq_x '
+    value: 'seq_x + seq_one + seq_zero + seq_one + seq_zero + seq_one + seq_one +
+      seq_x + seq_one + seq_zero + seq_x '
   states:
     bus_sink: false
     bus_source: false

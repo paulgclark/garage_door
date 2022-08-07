@@ -71,7 +71,7 @@ blocks:
       the file name to include the
 
       center frequency you selected.'
-    file: ./remote_01_cxxxM_s4M.iq
+    file: ./remote_01_cxxxM_s1M.iq
     type: complex
     unbuffered: 'False'
     vlen: '1'
@@ -79,9 +79,9 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [446, 241]
+    coordinate: [447, 241]
     rotation: 0
-    state: true
+    state: disabled
 - name: qtgui_freq_sink_x_0
   id: qtgui_freq_sink_x
   parameters:

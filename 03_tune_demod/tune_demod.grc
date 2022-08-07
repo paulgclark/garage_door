@@ -176,7 +176,7 @@ blocks:
     alias: ''
     begin_tag: pmt.PMT_NIL
     comment: ''
-    file: /home/paul/code/garage_door/remote_00_c390M_s4M.iq
+    file: /home/paul/garage_door/remote_00_c390M_s1M.iq
     length: '0'
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -339,7 +339,7 @@ blocks:
     bus_structure: null
     coordinate: [375, 520]
     rotation: 180
-    state: enabled
+    state: disabled
 - name: qtgui_freq_sink_x_0_0
   id: qtgui_freq_sink_x
   parameters:

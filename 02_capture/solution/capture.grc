@@ -63,7 +63,7 @@ blocks:
     alias: ''
     append: 'False'
     comment: ''
-    file: ./remote_00_c390M_s4M.iq
+    file: ./remote_00_c390M_s1M.iq
     type: complex
     unbuffered: 'False'
     vlen: '1'

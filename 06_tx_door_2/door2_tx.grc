@@ -32,38 +32,6 @@ options:
     state: enabled
 
 blocks:
-- name: bits_0_5
-  id: variable
-  parameters:
-    comment: 'Modify these bits
-
-      to control the
-
-      second door'
-    value: seq_one + seq_zero + seq_one + seq_zero + seq_one + seq_one
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [1041, 3]
-    rotation: 0
-    state: enabled
-- name: bits_7_8
-  id: variable
-  parameters:
-    comment: 'Modify these bits
-
-      to control the
-
-      second door'
-    value: seq_one + seq_zero
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [1212, 5]
-    rotation: 0
-    state: enabled
 - name: center_freq
   id: variable
   parameters:
@@ -106,13 +74,17 @@ blocks:
 - name: payload
   id: variable
   parameters:
-    comment: ''
-    value: 'seq_x + bits_0_5 + seq_x + bits_7_8 + seq_x '
+    comment: 'Modify this variable
+
+      to control the
+
+      second door'
+    value: seq_x
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [672, 4]
+    coordinate: [736, 4]
     rotation: 0
     state: enabled
 - name: rf_gain
