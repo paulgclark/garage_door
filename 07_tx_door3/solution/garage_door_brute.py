@@ -81,7 +81,7 @@ fg.start()
 ctl_sel = input("Press Enter to begin iterative attack: ")
 
 # for each possible config of DIP switches
-for dip_int in range(0x100):
+for dip_int in range(0x100):  # this for brute force
 #for dip_int in [0x36, 0xAE, 0xD9]:  # this is quicker
     print("DIP = {:02x}".format(dip_int))
     payload_bits = build_payload(dip_int=dip_int)
